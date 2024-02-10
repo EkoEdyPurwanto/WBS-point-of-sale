@@ -3,7 +3,12 @@
     - user_id
     - username
     - password
+    - pin
+    - email
+    - phone_number
     - created_at
+    - update_at
+    - delete_at
 
 + _table Product_
     - product_id
