@@ -1,0 +1,90 @@
+{
+  "REGISTER ADMIN": [
+    {
+      "request": {
+        "username": "john doe",
+        "email|phone_number": "johndoe@gmail.com|0897715753",
+        "password": "secret",
+        "password_confirm": "secret",
+        "pin": 123456
+      }
+    },
+    {
+      "response": {
+        "status": 201,
+        "message": "you have successfully register"
+      }
+    }
+  ],
+  "LOGIN ADMIN": [
+    {
+      "request": {
+        "username|email|phone_number": "john doe|johndoe@gmail.com|0897715753",
+        "password": "secret",
+        "pin": ""
+      }
+    },
+    {
+      "response": {
+        "status": 200,
+        "token": "isine token",
+        "message": "you have successfully login"
+      }
+    }
+  ],
+  "FORGET PASSWORD": [
+    {
+      "request if you not implement thirdParty": {
+        "|email|phone_number": "",
+        "pin": "",
+        "new_password": "",
+        "new_confirm_password": ""
+      },
+      "request if you implement thirdParty": {
+        "|email|phone_number": ""
+      }
+    },
+    {
+      "response": {
+        "status": "200",
+        "message": "successfully forgot password and change password"
+      }
+    }
+  ],
+  "CHANGE PASSWORD ADMIN": [
+    {
+      "request": {
+        "pin": "",
+        "token": "",
+        "new_password": "",
+        "new_confirm_password": ""
+      }
+    },
+    {
+      "response": {
+        "status": "200",
+        "message": "successfully change password admin"
+      }
+    }
+  ],
+  "CHANGE PASSWORD CASHIER": [
+    {
+      "request": {
+        "username|email|phone_number": "john doe|johndoe@gmail.com|0897715753",
+        "password": "secret",
+        "pin": "",
+        "username_cashier|email_cashier|phone_number_cashier": "",
+        "new_password_cashier": "",
+        "new_confirm_password_cashier": ""
+      }
+    },
+    {
+      "response": {
+        "status": "200",
+        "message": "successfully change password cashier"
+      }
+    }
+  ]
+}
+
+
