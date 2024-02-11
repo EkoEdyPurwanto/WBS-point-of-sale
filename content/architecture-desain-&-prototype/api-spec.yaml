@@ -1,0 +1,19 @@
+swagger: "2.0"
+info:
+  title: point-of-sale
+  description: point-of-sale
+  version: 1.0.0
+host: localhost:8080
+schemes:
+  - https
+securityDefinitions:
+  pin number:
+    type: apiKey
+    name: pin number
+    in: header
+  access_token:
+    type: apiKey
+    name: access-token
+    in: header
+paths:
+  
